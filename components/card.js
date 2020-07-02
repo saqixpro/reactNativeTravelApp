@@ -6,7 +6,7 @@ import { Text, Image, View } from "react-native";
 export default function Card({ title, description, image, location, onPress }) {
   return (
     <>
-      <TouchableOpacity style={styles.card}>
+      <TouchableOpacity onPress={onPress} style={styles.card}>
         <View style={{ flexDirection: "row" }}>
           <View style={styles.cardImage}>
             <Image

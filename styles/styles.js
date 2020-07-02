@@ -117,7 +117,45 @@ export const styles = StyleSheet.create({
   },
 
   cardImage: {
-    padding: 0,
     flex: 0.3,
+  },
+
+  smallButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 50,
+    backgroundColor: "rgba(255,255,255,0.3)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  carouselCard: {
+    marginHorizontal: 10,
+    width: width - width / 5,
+    height: height / 3,
+  },
+  carouselHeader: {
+    alignItems: "center",
+  },
+  carouselHeaderText: {
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  carouselHeaderIndicator: {
+    marginVertical: 10,
+    backgroundColor: "#A50",
+    width: 70,
+    height: 5,
+    borderRadius: 50,
+  },
+  carouselBody: {
+    padding: 20,
+  },
+  carouselData: {
+    textAlign: "justify",
+    fontSize: 16,
+  },
+  carouselButton: {
+    width: width / 1.5,
+    height: 50,
   },
 });
