@@ -50,7 +50,7 @@ const { Navigation, Screen } = createNativeStackNavigator();
 
 ## Unlocked All Categories on Home Screen
 
-> mainScreen.js
+> screens/mainScreen.js
 
 Previosuly (in the tutorial also) it was only one category working for the demo, now all the categories have been unlocked, I've made the following changes in the code to achieve it
 
@@ -82,7 +82,7 @@ navigateTo = (image, title, slogan) => {
 ...
 ```
 
-> luxury.js
+> screens/luxury.js
 
 The data is received in the route params of the navigation and in order to handle it within this component i've made the following adjustments.
 
