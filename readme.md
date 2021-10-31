@@ -8,19 +8,12 @@
 
 ## Full Tutorial for this project is available
 
-Part 1
-https://www.youtube.com/watch?v=lALR7S0zQ3A
+<a href="https://www.youtube.com/watch?v=lALR7S0zQ3A">Part 1</a>
+<a href="https://www.youtube.com/watch?v=G63VQ9jX5z4">Part 2</a>
+<a href="https://www.youtube.com/watch?v=Mc6xpbSmLzU">Part 3</a>
+<a href="https://www.youtube.com/watch?v=YewA7CeSeCA">Part 4</a>
 
-Part 2
-https://www.youtube.com/watch?v=G63VQ9jX5z4
-
-Part 3
-https://www.youtube.com/watch?v=Mc6xpbSmLzU
-
-Part 4
-https://www.youtube.com/watch?v=YewA7CeSeCA
-
-Checkout Dope Programming Youtube Channel for More Interesting Tutorials about React Native and Other JavaScript Frameworks 😎
+Checkout <a href="https://www.youtube.com/c/saqixpro">My Youtube Channel</a> for More Interesting Tutorials about React Native and Other JavaScript Frameworks 😎
 
 Some Important Changes Were Done After the Tutorial
 
