@@ -49,11 +49,13 @@ export default class Luxury extends Component {
         toValue: height / 3,
         duration: 800,
         easing: Easing.back(),
+        useNativeDriver: true,
       }),
       Animated.timing(this.state.cardAlignment, {
         toValue: 0,
         duration: 700,
         easing: Easing.ease,
+        useNativeDriver: true,
       }),
     ]).start();
   };

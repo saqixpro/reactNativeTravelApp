@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import MainScreen from "./screens/mainScreen";
 import Luxury from "./screens/luxury";
 import Details from "./screens/details";
-const { Navigator, Screen } = createStackNavigator();
+
+const { Navigator, Screen } = createNativeStackNavigator();
 
 export default class App extends Component {
   render() {

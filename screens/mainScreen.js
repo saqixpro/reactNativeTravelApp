@@ -21,7 +21,16 @@ export default class MainScreen extends Component {
       toValue: 200,
       duration: 700,
       easing: Easing.back(),
+      useNativeDriver: true,
     }).start();
+  };
+
+  toCategory = (image, title, slogan) => {
+    this.props.navigation.navigate("Luxury", {
+      image,
+      title,
+      slogan,
+    });
   };
 
   render() {
@@ -53,7 +62,13 @@ export default class MainScreen extends Component {
                 style={styles.image}
               />
               <ImageButton
-                onPress={() => this.props.navigation.navigate("Luxury")}
+                onPress={() =>
+                  this.toCategory(
+                    require("../assets/images/1.jpg"),
+                    "Luxury",
+                    "Stunning Places"
+                  )
+                }
                 title="Luxury"
                 description="Stunning Places"
               />
@@ -63,7 +78,17 @@ export default class MainScreen extends Component {
                 source={require("../assets/images/2.jpg")}
                 style={styles.image}
               />
-              <ImageButton title="Family" description="Love Everywhere" />
+              <ImageButton
+                onPress={() =>
+                  this.toCategory(
+                    require("../assets/images/2.jpg"),
+                    "Family",
+                    "Love Everywhere"
+                  )
+                }
+                title="Family"
+                description="Love Everywhere"
+              />
             </View>
           </View>
           <View style={styles.imageContainer}>
@@ -73,6 +98,13 @@ export default class MainScreen extends Component {
                 style={styles.image}
               />
               <ImageButton
+                onPress={() =>
+                  this.toCategory(
+                    require("../assets/images/3.jpg"),
+                    "Backpacking",
+                    "Enjoy Every Moment"
+                  )
+                }
                 title="Backpacking"
                 description="Enjoy Every Moment"
               />
@@ -82,7 +114,17 @@ export default class MainScreen extends Component {
                 source={require("../assets/images/4.jpg")}
                 style={styles.image}
               />
-              <ImageButton title="Trending" description="Just Go Now" />
+              <ImageButton
+                onPress={() =>
+                  this.toCategory(
+                    require("../assets/images/4.jpg"),
+                    "Trending",
+                    "Just Go Now"
+                  )
+                }
+                title="Trending"
+                description="Just Go Now"
+              />
             </View>
           </View>
         </View>

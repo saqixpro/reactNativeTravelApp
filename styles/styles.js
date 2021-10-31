@@ -129,8 +129,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   carouselCard: {
-    marginHorizontal: 10,
-    width: width - width / 5,
+    width: width,
     height: height / 3,
   },
   carouselHeader: {

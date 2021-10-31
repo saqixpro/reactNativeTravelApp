@@ -28,6 +28,7 @@ export default class Details extends Component {
       toValue: height / 1.7,
       duration: 800,
       easing: Easing.back(),
+      useNativeDriver: false,
     }).start();
 
   initializeTheUI = async () => {
@@ -102,7 +103,6 @@ export default class Details extends Component {
             horizontal={true}
             showsHorizontalScrollIndicator={false}
             scrollEventThrottle={300}
-            contentOffset={{ x: 300 }}
             pagingEnabled={true}
           >
             <CarouselCard

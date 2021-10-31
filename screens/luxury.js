@@ -82,11 +82,13 @@ export default class Luxury extends Component {
         toValue: height / 3,
         duration: 800,
         easing: Easing.back(),
+        useNativeDriver: false,
       }),
       Animated.timing(this.state.cardAlignment, {
         toValue: 0,
         duration: 700,
         easing: Easing.ease,
+        useNativeDriver: true,
       }),
     ]).start();
   };
@@ -121,12 +123,16 @@ export default class Luxury extends Component {
       <View>
         <Animated.View style={[{ width: width }, AnimatedBackground]}>
           <ImageBackground
-            source={require("../assets/images/1.jpg")}
+            source={this.props.route.params.image}
             style={styles.backgroundImage}
           >
             <View style={styles.textView}>
-              <Text style={styles.title}>Luxury</Text>
-              <Text style={styles.description}>Stunning Places</Text>
+              <Text style={styles.title}>
+                {this.props.route?.params?.title}
+              </Text>
+              <Text style={styles.description}>
+                {this.props.route?.params.slogan}
+              </Text>
             </View>
           </ImageBackground>
         </Animated.View>
